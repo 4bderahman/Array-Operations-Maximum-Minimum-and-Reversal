@@ -1,0 +1,37 @@
+Algorithme ArrayOperations
+
+Fonction Max(T: Tableau réel)
+    Max <- T(0)
+    Pour i de 0 à 9 faire
+        Si T(i) > Max Alors
+            Max <- T(i)
+        Fin Si
+    Fin Pour
+    Retourne Max
+
+Fonction Min(T: Tableau réel)    
+    Min <- T(0)
+    Pour i de 0 à 9 faire
+        Si T(i) < Min Alors
+            Min <- T(i)
+        Fin Si
+    Fin Pour
+    Retourne Min
+
+Fonction Reverse(T: Tableau réel)
+   Pour i de 0 à 9 pas 1 faire
+    reversedT(i) <- T[9 - i]
+    Fin Pour
+    Retourne reversedT
+Fin
+Début
+    Tableau T(10): reel
+    Pour i de 0 à 9 pas 1 faire
+        Écrire("Donner l'élément : ", i + 1, " : ")
+        Lire(T(i))
+    Fin Pour
+
+    Écrire("Le Maximum est : ", Max(T))
+    Écrire("Le Minimum est : ", Min(T))
+    Écrire("Le tableau inversé est : ", Reverse(T))
+Fin
